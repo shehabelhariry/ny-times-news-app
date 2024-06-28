@@ -23,3 +23,4 @@
 ## Running the tests
 
 - Run the following command: `npm run test` to run the tests
+- To get the coverage, run the command: `npm run test:coverage`, the tests will run and a coverage directory will appear in the root folder with the entry: `coverage/Icov-report/index.html`
