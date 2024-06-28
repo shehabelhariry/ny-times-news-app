@@ -24,3 +24,16 @@
 
 - Run the following command: `npm run test` to run the tests
 - To get the coverage, run the command: `npm run test:coverage`, the tests will run and a coverage directory will appear in the root folder with the entry: `coverage/Icov-report/index.html`
+
+## Building the app
+
+- Run the command: `npm run build`
+- a `dist` directory will be generated with the index.html file and assets.
+
+## Things I would add if I have time:
+
+1. Reduce bundle size with dynamic imports and using a smaller UI library.
+2. Add good support for custom styling.
+3. Implement the UI improvement proposed in the first section.
+4. Add a control to change between periods 1 and 7 and 30 and maybe filters if the API supports it.
+5. Include 1 integeration test using Playwright or Puppeteer to make sure that the whole flow is working correctly
