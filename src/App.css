@@ -1,20 +1,28 @@
-:root {
-  --primary-color: #1b89f0;
-}
-
 body {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .ny-app__header {
-  background-color: var(--primary-color);
-  color: white;
   height: 4rem;
 }
+
+.ny-app__header__title {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  color: white;
+}
+
 .ny-app__content {
   min-height: calc(100vh - 4rem);
+  flex-direction: column;
+  display: flex;
+}
+
+.ny-app__content > div {
+  flex: 1;
 }
 
 .ny-app_card {
-  padding: 8px;
+  padding: 0.5rem;
 }

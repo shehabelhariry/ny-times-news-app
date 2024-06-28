@@ -2,18 +2,18 @@ import { LinkOutlined } from "@ant-design/icons";
 import { Card, Flex, Space, Typography } from "antd";
 import { Link } from "react-router-dom";
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Text } = Typography;
 
 const ArticleCard = ({ article }) => {
   return (
     <div className="ny-app_card">
       <Card
         actions={[
-          <Link to={`/article/${article.id}`}>
+          <Link state={article} to={`/article/${article.id}`}>
             <Flex align="center" justify="center">
               <Space>
                 <LinkOutlined />
-                Read full article
+                View More Details
               </Space>
             </Flex>
           </Link>,
@@ -32,7 +32,6 @@ const ArticleCard = ({ article }) => {
               {article.author}
             </Text>
           </div>
-          <Paragraph>{article.description}</Paragraph>
         </Space>
       </Card>
     </div>
