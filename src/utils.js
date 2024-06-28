@@ -19,7 +19,6 @@ export const getImageFromArticle = (article) => {
 };
 
 export const getValidatedArticles = (articles) => {
-  console.log(articles);
   return articles.map((article) => {
     return {
       id: article.asset_id,
