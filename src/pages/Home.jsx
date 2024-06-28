@@ -3,7 +3,6 @@ import { getMostViewedArticles } from "../services";
 import { Spin } from "antd";
 
 import Articles from "../components/Articles";
-
 const Home = () => {
   const {
     isLoading,
@@ -20,7 +19,7 @@ const Home = () => {
   if (error) {
     return <div>{error}</div>;
   }
-  console.log(articles);
+
   return <Articles articles={articles} />;
 };
 export default Home;

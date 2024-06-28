@@ -1,7 +1,8 @@
 import { LinkOutlined } from "@ant-design/icons";
-import { Card, Flex, Space } from "antd";
-import Meta from "antd/es/card/Meta";
+import { Card, Flex, Space, Typography } from "antd";
 import { Link } from "react-router-dom";
+
+const { Title, Paragraph, Text } = Typography;
 
 const ArticleCard = ({ article }) => {
   return (
@@ -24,7 +25,15 @@ const ArticleCard = ({ article }) => {
           />
         }
       >
-        <Meta title={article.title} description={article.description} />
+        <Space direction="vertical" size={14}>
+          <div>
+            <Title level={5}>{article.title}</Title>
+            <Text italic underline>
+              {article.author}
+            </Text>
+          </div>
+          <Paragraph>{article.description}</Paragraph>
+        </Space>
       </Card>
     </div>
   );

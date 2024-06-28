@@ -28,6 +28,7 @@ export const getValidatedArticles = (articles) => {
       description: article.abstract,
       coverImage: getImageFromArticle(article),
       date: article.published_date,
+      author: article.byline,
     };
   });
 };
