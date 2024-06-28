@@ -1,7 +1,10 @@
+export const DEFAULT_IMAGE =
+  "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png";
+
 export const getImageFromArticle = (article) => {
-  if (article.media.length === 0) {
+  if (!article || article?.media?.length === 0) {
     return {
-      url: "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
+      url: DEFAULT_IMAGE,
       caption: "placeholder",
     };
   }
