@@ -1,5 +1,6 @@
 import { LinkOutlined } from "@ant-design/icons";
 import { Col, Image, Row, Space, Typography } from "antd";
+import React from "react";
 
 const { Title, Paragraph, Text, Link } = Typography;
 
